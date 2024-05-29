@@ -6,10 +6,6 @@
        "use": "@vercel/node" }
     ],
     "routes": [{ "src": "/.*",
-     "dest": "index.js" }],
-     "rewirte":[{"src":".index.js", "dest":"/"}],
-     
-        "buildCommand": "next build"
-      
+     "dest": "index.js" }]
 
   }
