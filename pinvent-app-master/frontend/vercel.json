@@ -1,13 +1,4 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
-      }
-    ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/" }
-  ],
   "builds": [
     {
       "src": "package.json",
@@ -17,9 +8,12 @@
       }
     }
   ],
-  "env": {
-    "NODE_OPTIONS": "--openssl-legacy-provider"
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-}  
-  
+  ]
+}
+
   
