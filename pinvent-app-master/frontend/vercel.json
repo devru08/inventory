@@ -8,6 +8,15 @@
   "routes": [
     { "src": "/(.*)", "dest": "/" }
   ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
   "env": {
     "NODE_OPTIONS": "--openssl-legacy-provider"
     }
